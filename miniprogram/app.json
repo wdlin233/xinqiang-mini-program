@@ -4,7 +4,6 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/article/article",
-    "pages/intro/intro",
     "pages/shop/shop",
     "pages/upload/upload",
     "pages/chat/chat",
