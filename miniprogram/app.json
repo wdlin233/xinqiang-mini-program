@@ -1,0 +1,48 @@
+{
+  "entryPagePath": "pages/index/index",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/article/article",
+    "pages/intro/intro",
+    "pages/shop/shop",
+    "pages/upload/upload",
+    "pages/chat/chat",
+    "pages/addPost/addPost",
+    "pages/post/post",
+    "pages/mistake/mistake",
+    "pages/question/question"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "心蔷·心翼",
+    "navigationBarBackgroundColor": "#005caf"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#005caf",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "position": "bottom", 
+    "custom": false, 
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "./images/icon/MaterialSymbolsHomeGray.png",
+      "selectedIconPath": "./images/icon/MaterialSymbolsHome.png"
+    }, {
+      "pagePath": "pages/shop/shop",
+      "text": "网店",
+      "iconPath": "./images/icon/MaterialSymbolsStoreGray.png",
+      "selectedIconPath": "./images/icon/MaterialSymbolsStore.png"
+    },{
+      "pagePath": "pages/chat/chat",
+      "text": "对接",
+      "iconPath": "./images/icon/MaterialSymbolsChatGray.png",
+      "selectedIconPath": "./images/icon/MaterialSymbolsChat.png"
+    }]
+  }
+}

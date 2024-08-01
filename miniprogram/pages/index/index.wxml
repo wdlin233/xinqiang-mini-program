@@ -1,0 +1,15 @@
+<!--pages/index/index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <text class="title">北京科技大学</text>
+    <text class="title">心蔷心翼孤独症公益服务实践团</text>
+    <image src="../../images/logo.png" mode="aspectFit"/>
+    <button bindtap="navigateToArticle" type="primary">阅读推送</button>
+    <view style="height: 12px"/>
+    <button bindtap="navigateToIntro" type="primary">相关科普</button>
+    <view style="height: 12px"/>
+    <button bindtap="navigateToMistake" type="primary">常见误区</button>
+    <view style="height: 12px"/>
+    <button bindtap="navigateToQuestion" type="primary">检测量表</button>
+  </view>
+</scroll-view>

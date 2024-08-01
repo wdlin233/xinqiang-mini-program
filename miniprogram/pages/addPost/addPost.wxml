@@ -1,0 +1,23 @@
+<!--pages/addPost/addPost.wxml-->
+<scroll-view class="container1" scroll-y type="list">
+    <view class="title">
+        <text id="main">公益服务对接平台🌙</text>
+        <view></view>
+        <text id="vice">上传招募志愿者需求</text>
+    </view>
+    <view class="space"></view>
+    <view class="box">
+      <view class="view-contain-ti">
+      <form bindsubmit="save" selectable="true" scroll-y="true">
+            <text class="text-ti">标题</text>
+            <input value="{{title}}" bindinput="titleInput" class="input1" placeholder="简洁描述工作需求" type="text"/>
+            <view class="space"></view>
+            <text class="text-ti">具体描述</text>
+            <textarea value="{{description}}" bindinput="descriptionInput" class="input2" placeholder="请描述您招募志愿者的需求，及志愿时间、地点等信息" name="textarea" selectable="true" maxlength="120"></textarea>
+            <view class="space"></view>
+            <view class="space"></view>
+            <button form-type="submit" type="primary">保存上传</button>
+        </form>
+      </view>
+    </view>
+</scroll-view>
