@@ -1,1 +1,0 @@
-"C:\Program Files (x86)\Tencent\΢��web�����߹���\cli.bat" cloud fYOUR ENVIDenv-4gmmahzg0371ffae --n quickstartFunctions --r --project "C:\Users\31523\WeChatProjects\miniprogram-3" --report_first --report
