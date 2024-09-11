@@ -1,0 +1,23 @@
+<!--pages/intro/intro.wxml-->
+<view class="container1">
+    <view class="title">
+        <text id="main">相关科普💫</text>
+        <view></view>
+        <text id="vice">介绍孤独症</text>
+    </view>
+    <view class="space"></view>
+    <view class="box">
+        <text>{{para1}}</text>
+        <view class="space"></view>
+        <view class="space"></view>
+        <text>{{para2}}</text>
+        <view class="space"></view>
+        <view class="space"></view>
+        <view>{{para3}}</view>
+        <view class="space"></view>
+        <view class="space"></view>
+        <text>{{para4}}</text>
+        <view class="space"></view>
+        <view class="space"></view>
+    </view>
+</view>

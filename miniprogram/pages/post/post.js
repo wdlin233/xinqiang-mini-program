@@ -29,17 +29,17 @@ Component({
               description:option.description
           });
           wx.cloud.init({
-            env:'oneenv-4gmmahzg0371ffae'
+            env:'YOUR ENVID'
           });
           const db = wx.cloud.database({
-            env:'oneenv-4gmmahzg0371ffae'
+            env:'YOUR ENVID'
           });
           const _ = db.command;
           this.data.comments = db.collection('comments');
       },
       onShow:function(){
         const db = wx.cloud.database({
-          env:'oneenv-4gmmahzg0371ffae'
+          env:'YOUR ENVID'
         });
         const _ = db.command;
         this.data.comments = db.collection('comments'); // necessary
@@ -71,7 +71,7 @@ Component({
       },
       save:function(){
         const db = wx.cloud.database({
-          env:'oneenv-4gmmahzg0371ffae'
+          env:'YOUR ENVID'
         });
         this.data.comments = db.collection('comments')
         if(this.data.contentInputText.length == 0){

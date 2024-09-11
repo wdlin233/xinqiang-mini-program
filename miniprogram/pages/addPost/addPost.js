@@ -22,10 +22,10 @@ Component({
   methods:{
     onLoad:function(){
       wx.cloud.init({
-        env:'oneenv-4gmmahzg0371ffae'
+        env:'YOUR ENVID'
       });
       const db = wx.cloud.database({
-        env:'oneenv-4gmmahzg0371ffae'
+        env:'YOUR ENVID'
       });
       this.data.posts = db.collection('posts')
     },
