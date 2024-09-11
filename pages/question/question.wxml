@@ -1,0 +1,38 @@
+<!--pages/question/question.wxml-->
+<scroll-view class="container1" scroll-y type="list">
+    <view class="title">
+        <text id="main">检测量表💫</text>
+        <view></view>
+        <text id="vice">克氏孤独症行为量表(CABS)</text>
+    </view>
+    <view class="space"></view>
+    <form bindsubmit="onSubmit">
+      <!-- 题目列表 -->
+      <block wx:for="{{questions}}" wx:key="index" wx:for-index="idx">
+        <view class="question">
+          <text class="questionText">{{item.text}}</text>
+          <radio-group bindchange="onAnswerChange" data-index="{{idx}}">
+            <view class="options">
+              <radio value="never">从不</radio>
+            </view>
+            <view class="options">
+              <radio value="seldom">偶尔</radio>
+            </view>
+            <view class="options">
+              <radio value="often">经常</radio>
+            </view>
+          </radio-group>
+        </view>
+      </block>
+      
+      <!-- 提交按钮 -->
+      <button class="submitBtn" type="primary" formType="submit">提交</button>
+    </form>
+    <!-- 显示得分 -->
+    <view class="scoreDisplay">
+      <text>您的总得分是：{{totalScore}}</text>
+      <view class="space"></view>
+      <text wx:if="{{totalScore>=14}}">初步筛查为孤独症</text>
+      <text wx:else>不是孤独症</text>
+    </view>
+</scroll-view>
